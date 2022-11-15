@@ -1,0 +1,6 @@
+<h1>Ввод данных</h1>
+<%= form_tag("/calc/output", :method => "get") do %>
+   <%= label_tag("Ввод последовательности:") %>
+   <%= text_field_tag(:v) %>
+   <%= submit_tag("Результат обработки") %>
+<% end %>
